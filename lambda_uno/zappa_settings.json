@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "app_function": "apps.f",
+        "aws_region": "us-east-1",
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "manage_roles": false,
+        "apigateway_enabled": false,
+        "project_name": "lambda-uno",
+        "runtime": "python3.8",
+        "s3_bucket": "bucketfincaraiz",
+
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "app_function": "apps.lambda_handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "lambda-2",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-tmtvhlyzs",
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "manage_roles": false,
+        "apigateway_enabled": false,
+        "events": [{
+                "function": "apps.lambda_handler",
+                "event_source": {
+                      "arn":  "arn:aws:s3:::bucketfincaraiz",
+                      "events": [
+                        "s3:ObjectCreated:*" 
+                      ]
+                }
+        }]
+    }
+}
