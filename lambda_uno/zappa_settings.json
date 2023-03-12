@@ -9,6 +9,9 @@
         "project_name": "lambda-uno",
         "runtime": "python3.8",
         "s3_bucket": "bucketfincaraiz",
-
+        "events": [{
+            "function": "apps.f",
+            "expression": "cron(0 9 ? * MON *)"
+        }]    
     }
 }
