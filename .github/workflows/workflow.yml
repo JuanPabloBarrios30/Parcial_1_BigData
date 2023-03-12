@@ -42,7 +42,7 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN}}
           aws-region: us-east-1
       
-      - name: Execution apps.py
+      - name: Execution project
         run: | 
           cd lambda_uno
           source env/bin/activate
