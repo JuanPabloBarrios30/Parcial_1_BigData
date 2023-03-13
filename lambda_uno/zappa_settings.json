@@ -11,7 +11,7 @@
         "s3_bucket": "bucketfincaraiz",
         "events": [{
             "function": "apps.f",
-            "expression": "cron(0 9 ? * MON *)"
+            "expression": "cron(0 14 ? * MON *)"
         }]    
     }
 }
