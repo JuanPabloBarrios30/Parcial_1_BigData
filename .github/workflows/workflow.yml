@@ -55,6 +55,12 @@ jobs:
           source env/bin/activate
           flake8 apps.py
           
+      - name: Execute unit test
+        run: | 
+          cd lambda_uno
+          source env/bin/activate
+          pytest
+          
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -63,7 +69,7 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN}}
           aws-region: us-east-1
       
-      - name: Execution project
+      - name: Execute the project
         run: | 
           cd lambda_uno
           source env/bin/activate
